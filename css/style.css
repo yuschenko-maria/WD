@@ -2,31 +2,15 @@ html{
     scroll-behavior: smooth;
   }
 .container{
-    max-width: 1350px;
-    height: fit-content;
+    max-width: 84rem;
     margin: 0 auto;
+    padding: 0 6rem;
 }
 body{
     margin: 0;
     font-family: 'Montserrat';
+    font-size: 16px;
 }
-
-@media (max-width:1350px) {
-    .container{
-        max-width: 970px;
-    }
-}
-@media (max-width:992px) {
-    .container{
-        max-width: 750px;
-    }
-}
-@media (max-width:767px) {
-    .container{
-        max-width: none;
-    }
-}
-
 :root{
     --main-yelow: #FED100;
     --main-black: #333333;
@@ -37,26 +21,21 @@ body{
 }
 .logo{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: 600;
-    line-height: 37px;
-    letter-spacing: 0em;
+    line-height: 2.3rem;
 }
 .header_li{
     list-style: none;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
+    line-height: 1.4rem;
 
 }
-.number{
-    font-size: 24px;
+.header_number{
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
+    line-height: 1.8rem;
     text-decoration: underline;
 
 }
@@ -66,20 +45,20 @@ a{
 }
 
 .page_header{
-    min-width: 1350px;
+    min-width: 84rem;
     background-color: var(--main-yelow);
 }
 .header_container{
-    max-width: 1350px;
+    max-width: 84rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    height: 4rem;
 }
 .header_menu{
-    width: 30rem;
     display: flex;
     justify-content: space-around;
+    gap: 2rem;
 }
 .benefits_card{
     display: flex;
@@ -89,62 +68,54 @@ a{
     display: flex;
     justify-content: space-between;
     width: 34rem;
-    height: 42px;
-    left: 307px;
-    top: 523px;
-    border-radius: 0px;
-    margin-top: 64px;
+    height: 2.6rem;
+    margin-top: 4rem;
 }
 .firstSection_wrapper{
     display: flex;
-    justify-content: space-between;
+}
+.welcome_main{
+    flex: 0 1 50%;
 }
 .first_section{
-    min-width: 1350px;
     background-color: var(--main-yelow);
+    min-width: 84rem;
 }
 .main_title{
-    font-size: 70px;
+    font-size: 4.3rem;
     font-weight: 700;
-    line-height: 74px;
-    letter-spacing: 0em;
+    line-height: 4.6rem;
 }
 .main_subtitle{
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 600;
-    line-height: 37px;
-    letter-spacing: 0em;
+    line-height: 2.3em;
 }
 .order_button{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 29px;
-    letter-spacing: 0em;
+    line-height: 1.8rem;
     color: var(--main-white) ;
     background-color: var(--main-red);
 }
 button{
-    height: 60px;
+    height: 3.75rem;
     width: 19rem;
-    left: 307px;
-    top: 389px;
     border: none;
 }
 button:hover {
     background-color: var(--main-orange); 
 }
 .benefits_title{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
+    line-height: 1.3rem;
+}
+.benefits_card{
+    gap: 0.5rem;
 }
 .main_pic{
-    height: 629px;
-    width: 34,5rem;
-    left: 1023px;
-    top: 21px;
-    border-radius: 0px;
+    margin: -4.5rem auto 0 auto ;
+    height: 100%;
+    width: 34.5rem;
 }
 
 
