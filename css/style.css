@@ -25,14 +25,14 @@ body{
     font-weight: 600;
     line-height: 2.3rem;
 }
-.header_li{
+.header__li{
     list-style: none;
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.4rem;
 
 }
-.header_number{
+.header__number{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.8rem;
@@ -44,54 +44,54 @@ a{
     color: var(--main-black);
 }
 
-.page_header{
+.page__header{
     min-width: 84rem;
     background-color: var(--main-yelow);
 }
-.header_container{
+.header__container{
     max-width: 84rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 4rem;
 }
-.header_menu{
+.header__menu{
     display: flex;
     justify-content: space-around;
     gap: 2rem;
 }
-.benefits_card{
+.benefits__card{
     display: flex;
     justify-content: space-between;
 }
-.benefits_wrapper{
+.benefits__wrapper{
     display: flex;
     justify-content: space-between;
     width: 34rem;
     height: 2.6rem;
     margin-top: 4rem;
 }
-.firstSection_wrapper{
+.firstSection__wrapper{
     display: flex;
 }
-.welcome_main{
+.welcome__main{
     flex: 0 1 50%;
 }
-.first_section{
+.first__section{
     background-color: var(--main-yelow);
     min-width: 84rem;
 }
-.main_title{
+.main__title{
     font-size: 4.3rem;
     font-weight: 700;
     line-height: 4.6rem;
 }
-.main_subtitle{
+.main__subtitle{
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.3em;
 }
-.order_button{
+.order__button{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.8rem;
@@ -106,13 +106,13 @@ button{
 button:hover {
     background-color: var(--main-orange); 
 }
-.benefits_title{
+.benefits__title{
     line-height: 1.3rem;
 }
-.benefits_card{
+.benefits__card{
     gap: 0.5rem;
 }
-.main_pic{
+.main__pic{
     margin: -4.5rem auto 0 auto ;
     height: 100%;
     width: 34.5rem;
