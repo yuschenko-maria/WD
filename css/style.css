@@ -7,7 +7,7 @@ html{
     padding: 0 6rem;
 }
 body{
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Montserrat';
     font-size: 16px;
 }
@@ -43,13 +43,10 @@ a{
     text-decoration: none;
     color: var(--main-black);
 }
-
 .page__header{
-    min-width: 84rem;
     background-color: var(--main-yelow);
 }
 .header__container{
-    max-width: 84rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +76,6 @@ a{
 }
 .first__section{
     background-color: var(--main-yelow);
-    min-width: 84rem;
 }
 .main__title{
     font-size: 4.3rem;
@@ -115,7 +111,92 @@ button:hover {
 .main__pic{
     margin: -4.5rem auto 0 auto ;
     height: 100%;
-    width: 34.5rem;
+    max-width: 34rem;
 }
-
-
+.mainPic__tablet{
+    display: none;
+}
+@media screen and (max-width:1200px) {
+    .container{
+        max-width: 768px;
+        padding: 0 15px;
+    }
+    .firstSection__wrapper{
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .header__menu,
+    .main__pic,
+    .header__number{
+        display: none;
+    }
+    .first__section{
+        text-align: center;
+    }
+    .main__title,
+    .main__subtitle,
+    .button__wrapper,
+    .welcome__main,
+    .benefits{
+        display: inline-block;
+    }
+    .main__title{
+       margin-bottom: 4px; 
+       font-size: 3.5rem;
+       max-width: 570px;
+    }
+    .main__subtitle{
+        font-size: 2.3rem;
+        line-height: 44px;
+    }
+    .mainPic__tablet{
+        display: block;
+        margin:-70px 0 -20px 0;
+    }
+    .order__button{
+        width: 392px;
+        height: 86px;
+    }
+}
+@media screen and (max-width:560px){
+    .container{
+        max-width: 320px;
+        padding: 0 5px;
+    }
+    .benefits{
+        display: none;
+    }
+    .logo{
+        font-size: 1rem;
+        padding-left: 15px;
+    }
+    .main__title{
+        font-size: 1.6rem;
+        max-width: 190px;
+        line-height: 37px;
+    }
+    .main__subtitle{
+        font-size: 1.2rem;
+        line-height: 22px;
+        margin-top: -5px;
+    }
+    .header__container{
+        margin: 0 5px ;
+    }
+    .mainPic__tablet{
+        width: 292px;
+        margin: -30px 0;
+    }
+    .man__taplet {
+        padding: 0 10px;
+        margin: -20px 0;
+        width: 100%;
+        height: auto;
+    }
+    .order__button{
+        max-width: 260px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
