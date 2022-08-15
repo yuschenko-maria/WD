@@ -4,7 +4,7 @@ html{
 .container{
     max-width: 84rem;
     margin: 0 auto;
-    padding: 0 6rem;
+    margin: 0 6rem;
 }
 body{
     margin: 0 auto;
@@ -64,14 +64,17 @@ a{
 .benefits__wrapper{
     display: flex;
     justify-content: space-between;
-    max-width: 34rem;
     margin-top: 4rem;
 }
 .firstSection__wrapper{
     display: flex;
+    justify-content: space-between;
 }
 .welcome__main{
+    flex-direction: column;
+    display: flex;
     flex: 0 1 50%;
+    justify-content: center;
 }
 .first__section{
     background-color: var(--main-yelow);
@@ -79,7 +82,6 @@ a{
 .welcome__title{
     font-size: 4.3rem;
     font-weight: 700;
-    line-height: 4.6rem;
 }
 .welcome__subtitle{
     font-size: 1.8rem;
@@ -101,14 +103,20 @@ button:hover {
 }
 .benefits__title{
     line-height: 1.3rem;
+    font-size: 0.8rem;
+}
+.benefits__card img{
+    width: 100%;
+    height: 100%;
 }
 .benefits__card{
+    padding-right: 20px;
     gap: 0.5rem;
 }
 .welcome__pic{
-    margin: -4.5rem auto 0 auto ;
-    height: 100%;
+    width: auto;
     max-width: 34rem; 
+    margin-top: -3.5rem;
 }
 .welcomePic__tablet{
     display: none;
@@ -117,12 +125,18 @@ button:hover {
     .benefits__wrapper{
         margin-top: 15px;
     }
+    .benefits__card img{
+        height: 100%;
+        width: 100%;
+    }
     .benefits__title{
         font-size: 0.8rem;
     }
     .welcome__title{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        line-height: 3rem;
         margin-bottom: 5px;
+        max-width: 300px;
     }
     .welcome__subtitle{
         font-size: 1rem;
@@ -134,16 +148,12 @@ button:hover {
     .welcome__pic img{
         padding: 0 5px;
         width: 100%;
-        height: auto;
     }
     .header__menu{
         gap: 1.2rem;
     }
-    .order__button{
-        max-width: 15rem;
-    }
 }
-@media screen and (max-width:960px){
+@media screen and (max-width:1024px){
     .benefits__card{
         display: none;
     }
@@ -163,6 +173,9 @@ button:hover {
     }
 }
 @media screen and (max-width:768px) {
+    .header__container{
+        margin: 0;
+    }
     .container{
         max-width: 768px;
         padding: 0 15px;
@@ -182,25 +195,27 @@ button:hover {
     .welcome__title,
     .welcome__subtitle,
     .button__wrapper,
-    .welcome__main,
-    .benefits{
-        display: inline-block;
+    .welcome__main{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 0 0 1rem 0;
     }
     .welcome__title{
-       margin-bottom: 4px; 
-       font-size: 3.5rem;
+       font-size: 3.2rem;
        max-width: 570px;
+       line-height: 3.5rem;
     }
     .welcome__subtitle{
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         line-height: 44px;
     }
     .welcomePic__tablet{
         display: block;
-        margin:-70px 0 -20px 0;
+        margin: -1rem 0 -1.5rem 0;
     }
     .order__button{
-        width: 392px;
+        width: 20rem;
         height: 86px;
     }
 }
@@ -217,12 +232,12 @@ button:hover {
         padding-left: 15px;
     }
     .welcome__title{
-        font-size: 1.6rem;
+        font-size: 2.2rem;
         max-width: 190px;
         line-height: 37px;
     }
     .welcome__subtitle{
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 22px;
         margin-top: -5px;
     }
