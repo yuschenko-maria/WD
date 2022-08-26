@@ -1,0 +1,244 @@
+.prices__wrapper{
+    margin-top: 6.2rem;
+    text-align: center;
+}
+.pricesCards__wrapper{
+    margin-top: 3.7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+    justify-content: center;
+}
+.prices__cards{
+    gap: 1.25rem;
+}
+.prices__card{
+    padding: 4.4rem;
+    border: 1px solid white;
+}
+.prices__card:hover{
+    border: 1px solid var(--main-yelow);
+}
+.prices__title{
+    margin-bottom: 1.6rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+.mobileTitle__prices{
+    display: none;
+}
+.prices__subtitle{
+    margin-bottom: 1.55rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.87rem;
+    margin-top: 1rem;
+}
+.price__title{
+    margin-bottom: 3.75rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+.price__subtitle{
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+.price__value{
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    font-size: 1.88rem;
+    line-height: 2.3rem;
+}
+.price__button{
+    padding: 1rem 5rem;
+    background-color: #FED100;
+    border: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+.price__button:hover{
+    color: var(--main-white);
+}
+
+@media screen and (max-width:1200px){
+    .pricesCards__wrapper{
+        gap: 2.8rem;
+    }
+    .prices__card{
+        padding: 1.25rem;
+    }
+    .prices__cards{
+        gap: 1.25rem;
+    }
+    .price__button{
+        padding: 1.5rem 4.5rem;
+    }
+}
+@media screen and (max-width:1024px){
+    .prices__wrapper{
+        margin-top: 3.1rem;
+    }
+    .container{
+        max-width: 48rem;
+        padding: 0 1rem;
+    }
+    .pricesCards__wrapper{
+        margin-top: 2.5rem;
+        gap: 0.6rem;
+    }
+    .prices__title{
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    .prices__subtitle{
+        margin-bottom: 0.6rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .price__title{
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .price__subtitle{
+        margin-bottom: 1rem;
+        font-size: 0.7rem;
+    }
+    .price__value{
+        margin-top: 1.5rem;
+        margin-bottom: 1.87rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    .price__button{
+        padding: 1rem 4.5rem;
+        background-color: #FED100;
+        border: none;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .price__button:hover{
+        color: var(--main-white);
+    }
+    .prices__card{
+        padding: 0.6rem;
+    }
+}
+@media screen and (max-width:840px){
+    .pricesCards__wrapper{
+        margin-top: 2.5rem;
+        gap: 1.25rem;
+    }
+    .prices__title{
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    .prices__subtitle{
+        margin-bottom: 0.6rem;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .price__title{
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .price__subtitle{
+        margin-bottom: 1rem;
+        font-size: 0.7rem;
+    }
+    .price__value{
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:768px){
+    .mobileTitle__prices{
+        margin-bottom: 3.1rem;
+        display: block;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+        border-bottom: 1px var(--main-black) solid;
+        padding-bottom: 0.4rem;
+    }
+    .card__one,
+    .card__three{
+        display: none;
+    }
+    .pricesCards__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prices__title{
+        font-size: 1.88rem;
+    }
+    .prices__subtitle{
+        margin-bottom: 0.6rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+    .price__title{
+        margin-bottom: 1.9rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .price__subtitle{
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+    .price__value{
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+    .price__button{
+        padding: 1.3rem 8rem;
+        font-weight: 500;
+        font-size: 1.75rem;
+    }
+}
+@media screen and (max-width:560px){
+    .mobileTitle__prices{
+        font-size: 1rem;
+        padding-bottom: 0.3rem;
+    }
+    .prices__title{
+        font-size: 1.25rem;
+    }
+    .prices__subtitle{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .price__title{
+        font-size: 1.1rem;
+    }
+    .price__subtitle{
+        font-size: 1rem;
+    }
+    .price__value{
+        font-size: 1.88rem;
+    }
+    .price__button{
+        font-size: 1.2rem;
+        padding: 1.5rem 7rem;
+    }
+}
