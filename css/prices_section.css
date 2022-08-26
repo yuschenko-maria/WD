@@ -6,69 +6,68 @@
     --main-orange: #FF772B;
 }
 .prices__wrapper{
-    margin-top: 100px;
+    margin-top: 6.2rem;
     text-align: center;
 }
 .pricesCards__wrapper{
-    margin-top: 60px;
+    margin-top: 3.7rem;
     display: grid;
-    grid-template-columns: repeat(3, 380px);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
     justify-content: center;
 }
 .prices__cards{
-    gap: 20px;
+    gap: 1.25rem;
 }
 .prices__card{
-    padding: 70px;
+    padding: 4.4rem;
     border: 1px solid white;
 }
 .prices__card:hover{
     border: 1px solid var(--main-yelow);
 }
 .prices__title{
-    margin-bottom: 25px;
+    margin-bottom: 1.6rem;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
 }
 .mobileTitle__prices{
     display: none;
 }
 .prices__subtitle{
-    margin-bottom: 25px;
+    margin-bottom: 1.55rem;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    margin-top: 16px;
+    font-size: 1.5rem;
+    line-height: 1.87rem;
+    margin-top: 1rem;
 }
 .price__title{
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 .price__subtitle{
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3rem;
 }
 .price__value{
-    margin-top: 40px;
-    margin-bottom: 55px;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 1.88rem;
+    line-height: 2.3rem;
 }
 .price__button{
-    width: 250px;
-    height: 50px;
+    padding: 1rem 5rem;
     background-color: #FED100;
     border: none;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
 }
 .price__button:hover{
     color: var(--main-white);
@@ -76,117 +75,111 @@
 
 @media screen and (max-width:1200px){
     .pricesCards__wrapper{
-        display: grid;
-        grid-template-columns: repeat(3, 250px);
-        gap: 45px;
+        gap: 2.8rem;
     }
     .prices__card{
-        padding: 20px;
+        padding: 1.25rem;
     }
     .prices__cards{
-        gap: 20px;
+        gap: 1.25rem;
     }
     .price__button{
-        width: 200px;
+        padding: 1.5rem 4.5rem;
     }
 }
 @media screen and (max-width:1024px){
     .prices__wrapper{
-        margin-top: 50px;
+        margin-top: 3.1rem;
     }
     .container{
-        max-width: 768px;
-        padding: 0 15px;
+        max-width: 48rem;
+        padding: 0 1rem;
     }
     .pricesCards__wrapper{
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 200px);
-        gap: 10px;
+        margin-top: 2.5rem;
+        gap: 0.6rem;
     }
     .prices__title{
-        margin-bottom: 25px;
+        margin-bottom: 1.5rem;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .prices__subtitle{
-        margin-bottom: 10px;
+        margin-bottom: 0.6rem;
         font-weight: 500;
-        font-size: 18px;
-        margin-top: 15px;
+        font-size: 1.2rem;
+        margin-top: 1rem;
     }
     .price__title{
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1rem;
     }
     .price__subtitle{
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
         font-size: 0.7rem;
     }
     .price__value{
-        margin-top: 25px;
-        margin-bottom: 30px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.87rem;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .price__button{
-        width: 150px;
-        height: 40px;
+        padding: 1rem 4.5rem;
         background-color: #FED100;
         border: none;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 0.8rem;
     }
     .price__button:hover{
         color: var(--main-white);
     }
     .prices__card{
-        padding: 10px;
+        padding: 0.6rem;
     }
 }
 @media screen and (max-width:840px){
     .pricesCards__wrapper{
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 190px);
-        gap: 20px;
+        margin-top: 2.5rem;
+        gap: 1.25rem;
     }
     .prices__title{
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 1.1rem;
     }
     .prices__subtitle{
-        margin-bottom: 10px;
+        margin-bottom: 0.6rem;
         font-weight: 500;
-        font-size: 16px;
-        margin-top: 15px;
+        font-size: 1rem;
+        margin-top: 1rem;
     }
     .price__title{
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 0.8rem;
     }
     .price__subtitle{
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
         font-size: 0.7rem;
     }
     .price__value{
-        margin-top: 15px;
-        margin-bottom: 20px;
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1rem;
     }
+}
 @media screen and (max-width:768px){
     .mobileTitle__prices{
-        margin-bottom: 50px;
+        margin-bottom: 3.1rem;
         display: block;
         font-weight: 500;
-        font-size: 25px;
+        font-size: 1.5rem;
         text-align: center;
         border-bottom: 1px var(--main-black) solid;
-        padding-bottom: 7px;
+        padding-bottom: 0.4rem;
     }
     .card__one,
     .card__three{
@@ -198,63 +191,61 @@
         align-items: center;
     }
     .prices__title{
-        font-size: 30px;
+        font-size: 1.88rem;
     }
     .prices__subtitle{
-        margin-bottom: 10px;
+        margin-bottom: 0.6rem;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
         text-align: center;
     }
     .price__title{
-        margin-bottom: 30px;
+        margin-bottom: 1.9rem;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
     }
     .price__subtitle{
         font-weight: 400;
-        margin-bottom: 24px;
-        font-size: 18px;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
     }
     .price__value{
-        margin-top: 24px;
-        margin-bottom: 16px;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 1.8rem;
     }
     .price__button{
-        width: 360px;
-        height: 71px;
+        padding: 1.3rem 8rem;
         font-weight: 500;
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 }
 @media screen and (max-width:560px){
     .mobileTitle__prices{
-        font-size: 16px;
-        padding-bottom: 5px;
+        font-size: 1rem;
+        padding-bottom: 0.3rem;
     }
     .prices__title{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .prices__subtitle{
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 1.25rem;
     }
     .price__title{
-        font-size: 18px;
+        font-size: 1.1rem;
     }
     .price__subtitle{
-        font-size: 16px;
+        font-size: 1rem;
     }
     .price__value{
-        font-size: 30px;
+        font-size: 1.88rem;
     }
     .price__button{
-        font-size: 20px;
-        width: 292px;
-        height: 60px;
+        font-size: 1.2rem;
+        padding: 1.5rem 7rem;
     }
 }
