@@ -1,10 +1,3 @@
-:root{
-    --main-yelow: #FED100;
-    --main-black: #333333;
-    --main-red: #FF352B;
-    --main-white:  #F2F2F2;
-    --main-orange: #FF772B;
-}
 .prices__wrapper{
     margin-top: 6.2rem;
     text-align: center;

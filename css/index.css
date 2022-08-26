@@ -1,4 +1,11 @@
 @import url("header_banner.css");
-@import url("prices_section.css");
-@import url("steps_section.css");
+@import url("prices.css");
+@import url("steps.css");
 @import url("reset.css");
+:root{
+    --main-yelow: #FED100;
+    --main-black: #333333;
+    --main-red: #FF352B;
+    --main-white:  #F2F2F2;
+    --main-orange: #FF772B;
+}

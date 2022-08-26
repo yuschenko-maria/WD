@@ -13,13 +13,6 @@ body{
     font-size: 16px;
     color: var(--main-black)
 }
-:root{
-    --main-yelow: #FED100;
-    --main-black: #333333;
-    --main-red: #FF352B;
-    --main-white:  #F2F2F2;
-    --main-orange: #FF772B;
-}
 .logo{
     text-transform: uppercase;
     font-size: 1.9rem;
@@ -32,7 +25,10 @@ body{
     font-weight: 500;
     line-height: 1.4rem;
     z-index:10;
-
+}
+a:hover{
+    color: var(--main-red);
+    transition: 1s;
 }
 .header__number{
     font-size: 1.5rem;
@@ -103,6 +99,7 @@ a{
 }
 .order__button:hover {
     background-color: var(--main-orange); 
+    transition: 1s;
 }
 .benefits__title{
     line-height: 1.3rem;
