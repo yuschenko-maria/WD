@@ -1,5 +1,6 @@
 .secondSection__wrapper{
     text-align: center;
+    padding-bottom: 4rem;
 }
 .step__tablet{
     display: none;
@@ -39,9 +40,6 @@
     max-width: 24.4rem;
 }
 @media screen and (max-width:1200px){
-    .secondSection__wrapper{
-        padding: 0;
-    }
     .steps__wrapper{
         padding: 0 3rem;
         gap: 3.1rem 5.6rem;
@@ -73,7 +71,6 @@
         font-weight: 500;
         font-size: 0.9rem;
         line-height: 1.25rem;
-        padding: 0 0 1rem 0;
         text-align: left;
     }
     .step__subtitle{

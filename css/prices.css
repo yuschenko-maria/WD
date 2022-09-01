@@ -1,6 +1,7 @@
 .prices__wrapper{
-    margin-top: 6.2rem;
+    padding-top: 6.2rem;
     text-align: center;
+
 }
 .pricesCards__wrapper{
     margin-top: 3.7rem;
@@ -17,7 +18,7 @@
     border: 1px solid white;
 }
 .prices__card:hover{
-    border: 1px solid var(--main-yelow);
+    border: 1px solid var(--main-yellow);
 }
 .prices__title{
     margin-bottom: 1.6rem;
@@ -56,7 +57,7 @@
 }
 .price__button{
     padding: 1rem 5rem;
-    background-color: #FED100;
+    background-color: var(--main-yellow);
     border: none;
     font-weight: 500;
     font-size: 1.25rem;
@@ -120,7 +121,7 @@
     }
     .price__button{
         padding: 1rem 4.5rem;
-        background-color: #FED100;
+        background-color: var(--main-yellow);
         border: none;
         font-weight: 500;
         font-size: 0.8rem;

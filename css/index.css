@@ -2,10 +2,26 @@
 @import url("prices.css");
 @import url("steps.css");
 @import url("reset.css");
+@import url("autos.css");
 :root{
-    --main-yelow: #FED100;
+    --main-yellow: #FED100;
     --main-black: #333333;
     --main-red: #FF352B;
     --main-white:  #F2F2F2;
     --main-orange: #FF772B;
+}
+html{
+    scroll-behavior: smooth;
+  }
+.container{
+    max-width: 84rem;
+    margin: 0 auto;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--main-black)
 }
