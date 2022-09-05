@@ -54,11 +54,13 @@
 }   
 @media screen and (max-width:1200px){
     div.reviews{
-        grid-template-columns: 26.4rem 26.3rem 26.2rem;
-        gap: 1.2rem;
-        overflow: hidden;
+        grid-template-columns: 26.6rem 26.3rem 26.2rem;
+        gap: 1.5rem;
+        overflow: auto;
+        margin: 0 -6rem;
     }
 }
+
 @media screen and (max-width:560px){
     .review__one,
     .review__three{
