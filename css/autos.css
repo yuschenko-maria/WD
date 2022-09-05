@@ -1,9 +1,11 @@
 div.auto__two,
-div.auto__three{
+div.auto__three,
+.auto__tablet{
     display: none;
 }
 .autos__section{
     padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 .autos__title{
     text-align: center;
@@ -50,7 +52,7 @@ div.auto__three{
     grid-template-columns: 15.6rem 40rem;
     gap: 5rem;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     padding: 0 4rem;
 }
 .autos__list{
@@ -172,5 +174,84 @@ div.auto__three{
         list-style: none;
         background: url("B:/WD/WD/assets/svg/check.svg") no-repeat 0 0.1rem;
         padding-left: 1rem;
+    }
+}
+@media screen and (max-width:768px){
+    .auto__tablet{
+        display: block;
+    }
+    .autoTablet__two,
+    .autoTablet__three{
+        display: none;
+    }
+    .auto__one,
+    .auto__two,
+    .auto__three{
+        display: none;
+    }
+    .tablet__subtitle{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .autoTablet__button{
+        padding: 1.25rem 7.5rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        background-color: var(--main-yellow);
+        border: none;
+    }
+    .autoTablet__button:hover{
+        color: var(--main-white);
+        transition: 1s;
+    }
+    .autoTablet__one,
+    .autoTablet__two,
+    .autoTablet__three{
+        text-align: center;
+    }
+    .auto__tablet{
+        text-align: center;
+    }
+    .auto__item{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding: 0;
+        border: none;
+    }
+    .auto__item:hover{
+        border: none;
+        border-bottom: 1px solid var(--main-yellow);
+    }
+    .autos__list{
+        max-width: 28.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        padding-bottom: 4rem;
+    }
+}
+@media screen and (max-width:560px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .autos__subtitle{
+        font-size: 1rem;
+    }
+    .auto__item{
+        font-size: 0.7rem;
+    }
+    .tablet__subtitle{
+        font-size: 0.75rem;
+    }
+    .autoTablet__button{
+        font-size: 1.1rem;
+        padding: 1.1rem 6.5rem;
+    }
+    .autos__list{
+        max-width: 16.5rem;
+        gap: 1rem;
     }
 }

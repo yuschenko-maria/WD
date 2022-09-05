@@ -26,9 +26,6 @@ a{
     text-decoration: none;
     color: var(--main-black);
 }
-.page__header{
-    background-color: var(--main-yellow);
-}
 .header__container{
     display: flex;
     justify-content: space-between;
@@ -60,9 +57,6 @@ a{
     flex: 0 1 50%;
     justify-content: center;
     gap: 0.8rem;
-}
-.first__section{
-    background-color: var(--main-yellow);
 }
 .welcome__title{
     font-size: 4.3rem;

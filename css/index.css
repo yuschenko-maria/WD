@@ -3,6 +3,7 @@
 @import url("steps.css");
 @import url("reset.css");
 @import url("autos.css");
+@import url("reviews.css");
 :root{
     --main-yellow: #FED100;
     --main-black: #333333;
@@ -24,4 +25,13 @@ body{
     font-family: 'Montserrat';
     font-size: 16px;
     color: var(--main-black)
+}
+.yellow__section{
+    background-color: var(--main-yellow);
+}
+@media screen and (max-width:560px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
