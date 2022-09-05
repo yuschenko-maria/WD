@@ -1,0 +1,257 @@
+div.auto__two,
+div.auto__three,
+.auto__tablet{
+    display: none;
+}
+.autos__section{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.autos__title{
+    text-align: center;
+    font-size: 1.87rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    padding-bottom: 1rem;
+}
+.autos__subtitle{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.87rem;
+    padding-bottom: 3.75rem;
+}
+.auto__item{
+    padding: 0.8rem 4rem ;
+    border: 1px solid var(--main-white);
+}
+.auto__item:hover{
+    border: 1px solid var(--main-yellow);
+}
+.terms__title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.87rem;
+    padding-bottom: 2.38rem;
+}
+.terms__list{
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+.terms__list li{
+    padding-bottom: 1.75rem;
+}
+.terms__list li{
+    list-style: none;
+    background: url("B:/WD/WD/assets/svg/check.svg") no-repeat 0 0.2rem;
+    padding-left: 1.5rem;
+}
+.autoCard__wrapper{
+    max-width: 76.2rem;
+    display: grid;
+    grid-template-columns: 15.6rem 40rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+}
+.autos__list{
+    max-width: 40rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.auto__button{
+    font-size: 1.2rem;
+    padding: 0.8rem 4.8rem;
+    background-color: var(--main-yellow);
+    border: none;
+}
+.auto__button:hover{
+    color: var(--main-white);
+}
+@media screen and (max-width:1200px){
+    .auto__button{
+        font-size: 1rem;
+        padding: 0.8rem 4rem;
+    }
+    .terms__title{
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        padding-bottom: 1.5rem;
+    }
+    .terms__list{
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+    }
+    .terms__list li{
+        padding-bottom: 1.3rem;
+    }
+    .autoCard__wrapper{
+        gap: 2rem;
+        grid-template-columns: 13rem 30rem;
+    }
+}
+@media screen and (max-width:1024px){
+    .auto__button{
+        font-size: 0.8rem;
+        padding: 0.6rem 3.5rem;
+    }
+    .terms__title{
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        padding-bottom: 1rem;
+    }
+    .terms__list{
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    .terms__list li{
+        padding-bottom: 1rem;
+    }
+    .autoCard__wrapper{
+        gap: 2rem;
+        grid-template-columns: 10rem 28rem;
+    }
+    .autos__title{
+        font-size: 1.5rem;
+        line-height: 2.rem;
+        padding-bottom: 1rem;
+    }
+    .autos__subtitle{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        padding-bottom: 3.5rem;
+    }
+}
+@media screen and (max-width:980px){
+    .auto__button{
+        font-size: 0.8rem;
+        padding: 0.6rem 2.5rem;
+    }
+    .terms__title{
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        padding-bottom: 0.5rem;
+    }
+    .terms__list{
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    .terms__list li{
+        padding-bottom: 0.8rem;
+    }
+    .autoCard__wrapper{
+        gap: 1.2rem;
+        grid-template-columns: 8rem 25rem;
+    }
+    .autoCard__wrapper{
+        padding: 0;
+    }
+    .autos__title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+    .autos__subtitle{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        padding-bottom: 3.5rem;
+    }
+    .autos__list{
+        max-width: 30rem;
+        gap: 1rem;
+    }
+    .auto__item{
+        padding: 0.6rem 2.5rem;
+        font-size: 0.8rem;
+    }
+    .terms__list li{
+        list-style: none;
+        background: url("B:/WD/WD/assets/svg/check.svg") no-repeat 0 0.1rem;
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width:768px){
+    .auto__tablet{
+        display: block;
+    }
+    .autoTablet__two,
+    .autoTablet__three{
+        display: none;
+    }
+    .auto__one,
+    .auto__two,
+    .auto__three{
+        display: none;
+    }
+    .tablet__subtitle{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .autoTablet__button{
+        padding: 1.25rem 7.5rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        background-color: var(--main-yellow);
+        border: none;
+    }
+    .autoTablet__button:hover{
+        color: var(--main-white);
+        transition: 1s;
+    }
+    .autoTablet__one,
+    .autoTablet__two,
+    .autoTablet__three{
+        text-align: center;
+    }
+    .auto__tablet{
+        text-align: center;
+    }
+    .auto__item{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding: 0;
+        border: none;
+    }
+    .auto__item:hover{
+        border: none;
+        border-bottom: 1px solid var(--main-yellow);
+    }
+    .autos__list{
+        max-width: 28.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        padding-bottom: 4rem;
+    }
+}
+@media screen and (max-width:560px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .autos__subtitle{
+        font-size: 1rem;
+    }
+    .auto__item{
+        font-size: 0.7rem;
+    }
+    .tablet__subtitle{
+        font-size: 0.75rem;
+    }
+    .autoTablet__button{
+        font-size: 1.1rem;
+        padding: 1.1rem 6.5rem;
+    }
+    .autos__list{
+        max-width: 16.5rem;
+        gap: 1rem;
+    }
+}

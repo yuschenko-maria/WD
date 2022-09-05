@@ -1,18 +1,3 @@
-html{
-    scroll-behavior: smooth;
-  }
-.container{
-    max-width: 84rem;
-    margin: 0 auto;
-    padding-right: 6rem;
-    padding-left: 6rem;
-}
-body{
-    margin: 0 auto;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    color: var(--main-black)
-}
 .logo{
     text-transform: uppercase;
     font-size: 1.9rem;
@@ -40,9 +25,6 @@ a:hover{
 a{
     text-decoration: none;
     color: var(--main-black);
-}
-.page__header{
-    background-color: var(--main-yelow);
 }
 .header__container{
     display: flex;
@@ -75,9 +57,6 @@ a{
     flex: 0 1 50%;
     justify-content: center;
     gap: 0.8rem;
-}
-.first__section{
-    background-color: var(--main-yelow);
 }
 .welcome__title{
     font-size: 4.3rem;
