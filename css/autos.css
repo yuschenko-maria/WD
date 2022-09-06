@@ -43,7 +43,7 @@ div.auto__three,
 }
 .terms__list li{
     list-style: none;
-    background: url("B:/WD/WD/assets/svg/check.svg") no-repeat 0 0.2rem;
+    background: url("../assets/svg/check.svg") no-repeat 0 0.2rem;
     padding-left: 1.5rem;
 }
 .autoCard__wrapper{

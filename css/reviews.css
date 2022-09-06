@@ -49,7 +49,7 @@
 .review__rating{
     width: 5rem;
     height: 0.9rem;
-    background-image: url("B:/WD/WD/assets/svg/star.svg");
+    background-image: url("../assets/svg/star.svg");
     display: block;
 }   
 @media screen and (max-width:1200px){
@@ -88,5 +88,9 @@
         padding-right: 1rem;
         padding-left: 1rem;
         padding-top: 0;
+    }
+    div.reviews{
+        max-width: 20rem;
+        margin: 0 auto;
     }
 }
