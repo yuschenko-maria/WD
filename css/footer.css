@@ -1,0 +1,49 @@
+.footer__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 6.25rem 0;
+}
+.privacy__terms{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 0  0 2.25rem 0;
+}
+.footer_logo{
+    padding: 0  0 2.75rem 0 ;
+}
+.footer__privacy{
+    max-width: 14.87rem;
+}
+.footer__li {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 0 0 0.9rem 0;
+}
+.footer__button{
+    max-width: 15.6rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 0.8rem 1.87rem;
+    background-color: var(--main-yellow);
+}
+.footer__callback{
+    flex-direction: column;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.footer__number{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    text-decoration: underline;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+}

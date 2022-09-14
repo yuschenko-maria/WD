@@ -30,7 +30,7 @@
         </div>
     </header>
     <main class="page__main">
-        <section  class="section yellow__section first__section">
+        <section  id="main" class="section yellow__section first__section">
             <div class="container firstSection__wrapper">
                 <div class="welcome__main">
                     <h1 class="welcome__title">Квартирные переезды</h1>
@@ -256,6 +256,140 @@
                 <button class="reviews__button">Все отзывы</button>
             </div>
         </section>
+        <section class="section discount__section">
+            <div class="discount__wrapper">
+                <h2 class="discount__title">Закажи  переезд прямо сейчас со скидкой %</h2>
+                <h3 class="discount__subtitle">Мы перезвоним в течении 10 секунд</h3>
+                <div class="personalData">
+                    <form>
+                        <label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </label>
+                        <label>
+                            <input type="tel" name="number" placeholder="Телефон">
+                        </label> 
+                    </form>
+                </div>
+                <div class="location">
+                    <form class="location__form">
+                        <h3 class="form__title">Укажите область</h3>
+                        <select name="town">
+                            <option area-disabled>Например: Минская</option>
+                            <option value="brestskaia">Брестская</option>
+                            <option value="vitebskaia">Витебская</option>
+                            <option value="gomelskaia">Гомельская</option>
+                            <option value="grodnenskaia">Гродненкая</option>
+                            <option value="minskaia">Минская</option>
+                            <option value="mogilevskaia">Могилевсая</option>
+                        </select>
+                    </form>
+                    <form>
+                        <h3 class="form__title">Укажите город</h3>
+                        <select>
+                            <option value="mozyr">Мозырь</option>
+                            <option value="minsk">Минск</option>
+                            <option value="vitebsk">Витебск</option>
+                            <option value="brest">Брест</option>
+                            <option value="gomel">Гомель</option>
+                            <option value="grodno">Гродно</option>
+                            <option value="orsha">Орша</option>
+                        </select>
+                    </form>
+                </div> 
+                <div class="payments">
+                    <h3 class="form__title">Способ оплаты</h3>
+                    <form class="payments__form">
+                        <label class="payment">
+                            <input type="radio" name="payment" value="cash">
+                            Наличными курьеру
+                        </label>
+                        <label class="payment">
+                            <input type="radio" name="payment" value="card">
+                            Картой курьеру
+                        </label>
+                        <label class="payment">
+                            <input type="radio" name="payment" value="moneyTransfer">
+                            Банковский перевод
+                        </label>
+                    </form>
+                </div>
+                <div class="services">
+                    <h3 class="form__title">Дополнительные услуги</h3>
+                    <form class="services__form">
+                        <label class="service">
+                            <input type="checkbox" name="service1" value="measurer">
+                            Вызов замерщика
+                        </label>
+                        <label class="service">
+                            <input type="checkbox" name="service2" value="fragile">
+                            Упаковка для хрупких предметов
+                        </label>
+                        <label class="service">
+                            <input type="checkbox" name="service3" value="crane">
+                            Кран
+                        </label>
+                        <label class="service">
+                            <input type="checkbox" name="service4" value="assembly">
+                            Сборка мебели
+                        </label>
+                        <label class="service">
+                            <input type="checkbox" name="service5" value="bulkyItems">
+                            Крупногабаритные предметы
+                        </label>
+                    </form>
+                </div>
+                <div class="discount__timer">
+                    <p>05:37:25</p>
+                    <div class="discount__button">
+                        <button type="submit">Заказать со скидкой</button>
+                        <form>
+                            <label class="agreement">
+                                <input type="checkbox">
+                                Даю согласие на обработку данных
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <iframe  class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.3789196085627!2d23.692561823465507!3d52.091035120364765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf0d6c7cb8f%3A0x5d0b2cc4f645f8ca!2z0YPQuy4g0JHRg9C00ZHQvdC90L7Qs9C-IDY0LCDQkdGA0LXRgdGCLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2spl!4v1662996212836!5m2!1sru!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
+    <footer class="yellow__section footer">
+        <div class="container footer__container">
+            <div class="footer__privacy">
+                <p class="logo footer_logo">Movee</p>
+                <p class="privacy__terms">Политика конфиденциальнности</p>
+                <p class="privacy__terms">Соглашение на обработку персональных данных</p>
+            </div>
+            <nav class="footer__nav">
+                <div class="nav__wrapper">
+                    <ul class="footer__menu">
+                        <li class="footer__li"><a href=#main>Главная</a></li>
+                        <li class="footer__li"><a href=#price>Цены</a></li>
+                        <li class="footer__li"><a href=#autos>Автопарк</a></li>
+                        <li class="footer__li"><a href=#reviews>Отзывы</a></li>
+                        <li class="footer__li"><a href=#contacts>Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer__social">
+                <div class="footer__callback">
+                    <button class="footer__button">
+                        Обратный звонок
+                    </button>
+                    <a class="footer__number" href="tel:+375299991312">8(029)-999-13-12</a>
+                </div>
+                <div class="social">
+                    <a href="#"><img src="assets/svg/yt.svg" alt="youtube" width="33.6"></img></a>
+                    <a href="#"><img src="assets/svg/vk.svg" alt="vk" width="33.6"></img></a>
+                    <a href="#"><img src="assets/svg/fb.svg" alt="facebook" width="33.6"></img></a>
+                    <a href="#"><img src="assets/svg/inst.svg" alt="inst" width="33.6"></img></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>

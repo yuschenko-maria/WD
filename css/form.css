@@ -1,0 +1,101 @@
+.discount__section{
+    max-width: 45.5rem;
+    margin: 0 auto;
+}
+input:focus, 
+select:focus{
+    outline: none
+}
+.discount__title{
+    font-weight: 600;
+    font-size: 1.87rem;
+    line-height: 2.3rem;
+    padding: 7.75rem 0 1rem 0;
+}
+.discount__subtitle{
+    font-size: 1rem;
+    line-height: 1.31rem;
+}
+.form__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 4rem 0 2rem 0;
+}
+.personalData{
+    padding: 3rem 0 0 0;
+}
+.discount__timer p{
+    font-size: 6rem;
+    line-height: 7.8rem;
+}
+.personalData form{
+    display: grid;
+    grid-template-columns: 18.75rem 18.75rem;
+    gap: 4.37rem;
+}
+.payment{
+    padding: 0 1.5rem 0 0;
+}
+.service{
+    padding: 0 2rem 0 0;
+}
+.services__form{
+    display: grid;
+    grid-template-columns: 14rem 23rem 6rem;
+    gap: 2.5rem;
+}
+.location{
+    display: grid;
+    grid-template-columns: 18.75rem 18.75rem;
+    gap: 4.37rem;
+}
+input{
+    border: none;
+}
+label{
+    border-bottom: 1px solid var(--main-black);
+}
+select{
+    width: 18.75rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--main-black);
+}
+.services{
+    padding-bottom: 4rem;
+}
+.discount__timer{
+    display: grid;
+    grid-template-columns: 1fr 16.25rem;
+    padding-bottom: 7.6rem;
+}
+.discount__button button:hover{
+    background-color: var(--main-orange);
+    transition: .5s;
+}
+.payment,
+.service,
+.agreement{
+    border: none;
+}
+.payments__form{
+    display: flex;
+    justify-content: space-between;
+}
+.discount__button button{
+    padding: 1.2rem 3rem;
+    background-color: var(--main-red);
+    border: none;
+    color: var(--main-white);
+    margin-bottom: 1.8rem;
+}
+.agreement{
+    font-size: 0.7rem;
+}
+.discount__button{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
