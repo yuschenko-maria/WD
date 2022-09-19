@@ -1,0 +1,49 @@
+.map__textTablet{
+    display: none; 
+}
+@media screen and (max-width:768px) {
+    .map__textTablet{
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: center;
+        padding: 3.75rem 0 8rem 0;
+    }
+    .map__city{
+        font-size: 2.5rem;
+        line-height: 3.3rem;
+    }
+    .email__underline{
+        content: "";
+        display: flex;
+        width: 10rem;
+        margin-top: 0.4rem;
+        height: 1px;
+        background: var(--main-black);
+    }
+    .map__number{
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    .map__email{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+}
+@media screen and (max-width:560px) {
+    .map__textTablet{
+        gap: 1.25rem;
+        padding: 1.25rem 0 1.25rem 0;
+    }
+    .email__underline{
+        width: 6.5rem;
+    }
+    .map__city,
+    .map__email,
+    .map__number{
+        font-size: 1rem;
+    }
+}
