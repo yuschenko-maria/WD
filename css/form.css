@@ -42,9 +42,18 @@ select:focus{
 }
 .payment{
     padding: 0 1.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
 }
 .service{
     padding: 0 2rem 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
 }
 .services__form{
     display: grid;
@@ -64,6 +73,7 @@ label{
 }
 select{
     width: 18.75rem;
+    padding: 0 0 1rem 0;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -89,6 +99,7 @@ select{
 .payments__form{
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem
 }
 .discount__button button{
     padding: 1.2rem 3rem;
@@ -99,6 +110,10 @@ select{
 }
 .agreement{
     font-size: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
 }
 .discount__button{
     display: grid;
@@ -112,7 +127,7 @@ select{
     display: inline-block;
     width: 1.25rem;
     height: 1.25rem;
-    border: 1px solid var(--main-black);
+    border: 2px solid var(--main-black);
     position: relative;
 }
 .checkbox:checked + .fake__service{
@@ -138,12 +153,12 @@ select{
     display: inline-block;
     width: 1.25rem;
     height: 1.25rem;
-    border: 1px solid var(--main-black);
+    border: 2px solid var(--main-black);
     border-radius: 50%;
     position: relative;
 }
 .radio:checked + .fake__payment{
-    border: 1px solid var(--main-yellow);
+    border: 2px solid var(--main-yellow);
 }
 .fake__payment::before{
     content: "";
@@ -165,7 +180,7 @@ select{
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    border: 1px solid var(--main-black);
+    border: 2px solid var(--main-black);
     position: relative;
 }
 .fake__agreement::before{
