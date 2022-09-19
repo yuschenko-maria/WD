@@ -259,6 +259,7 @@
         <section class="section discount__section">
             <div class="discount__wrapper">
                 <h2 class="discount__title">Закажи  переезд прямо сейчас со скидкой %</h2>
+                <h2 class="discount__titleTablet">Закажи  переезд прямо сейчас</h2>
                 <h3 class="discount__subtitle">Мы перезвоним в течении 10 секунд</h3>
                 <div class="personalData">
                     <form>
@@ -300,15 +301,18 @@
                     <h3 class="form__title">Способ оплаты</h3>
                     <form class="payments__form">
                         <label class="payment">
-                            <input type="radio" name="payment" value="cash">
+                            <input class="radio" type="radio" name="payment" value="cash">
+                            <span class="fake__payment"></span>
                             Наличными курьеру
                         </label>
                         <label class="payment">
-                            <input type="radio" name="payment" value="card">
+                            <input class="radio" type="radio" name="payment" value="card">
+                            <span class="fake__payment"></span>
                             Картой курьеру
                         </label>
                         <label class="payment">
-                            <input type="radio" name="payment" value="moneyTransfer">
+                            <input class="radio" type="radio" name="payment" value="moneyTransfer">
+                            <span class="fake__payment"></span>
                             Банковский перевод
                         </label>
                     </form>
@@ -317,23 +321,28 @@
                     <h3 class="form__title">Дополнительные услуги</h3>
                     <form class="services__form">
                         <label class="service">
-                            <input type="checkbox" name="service1" value="measurer">
+                            <input class="checkbox" type="checkbox" name="service1" value="measurer">
+                            <span class="fake__service"></span>
                             Вызов замерщика
                         </label>
                         <label class="service">
-                            <input type="checkbox" name="service2" value="fragile">
+                            <input class="checkbox" type="checkbox" name="service2" value="fragile">
+                            <span class="fake__service"></span>
                             Упаковка для хрупких предметов
                         </label>
                         <label class="service">
-                            <input type="checkbox" name="service3" value="crane">
+                            <input class="checkbox" type="checkbox" name="service3" value="crane">
+                            <span class="fake__service"></span>
                             Кран
                         </label>
                         <label class="service">
-                            <input type="checkbox" name="service4" value="assembly">
+                            <input class="checkbox" type="checkbox" name="service4" value="assembly">
+                            <span class="fake__service"></span>
                             Сборка мебели
                         </label>
                         <label class="service">
-                            <input type="checkbox" name="service5" value="bulkyItems">
+                            <input class="checkbox" type="checkbox" name="service5" value="bulkyItems">
+                            <span class="fake__service"></span>
                             Крупногабаритные предметы
                         </label>
                     </form>
@@ -341,10 +350,12 @@
                 <div class="discount__timer">
                     <p>05:37:25</p>
                     <div class="discount__button">
-                        <button type="submit">Заказать со скидкой</button>
+                        <button class="discounOrder__button" type="submit">Заказать со скидкой</button>
+                        <button  class="callback__button" type="submit">Перезвонить мне</button>
                         <form>
                             <label class="agreement">
-                                <input type="checkbox">
+                                <input class="checkbox" type="checkbox">
+                                <span class="fake__agreement"></span>
                                 Даю согласие на обработку данных
                             </label>
                         </form>
@@ -354,12 +365,20 @@
         </section>
         <section class="map">
             <iframe  class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.3789196085627!2d23.692561823465507!3d52.091035120364765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf0d6c7cb8f%3A0x5d0b2cc4f645f8ca!2z0YPQuy4g0JHRg9C00ZHQvdC90L7Qs9C-IDY0LCDQkdGA0LXRgdGCLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2spl!4v1662996212836!5m2!1sru!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map__textTablet">
+                <p class="map__city">Брест</p>
+                <p class="map__number">8 (029)-999-12-13</p>
+                <p class="map__email">
+                    hello@movee.ru
+                    <span class="email__underline"></span>
+                </p>
+            </div>
         </section>
     </main>
     <footer class="yellow__section footer">
         <div class="container footer__container">
             <div class="footer__privacy">
-                <p class="logo footer_logo">Movee</p>
+                <p class="logo footer__logo">Movee</p>
                 <p class="privacy__terms">Политика конфиденциальнности</p>
                 <p class="privacy__terms">Соглашение на обработку персональных данных</p>
             </div>
@@ -379,7 +398,7 @@
                     <button class="footer__button">
                         Обратный звонок
                     </button>
-                    <a class="footer__number" href="tel:+375299991312">8(029)-999-13-12</a>
+                    <a class="footer__number" href="tel:+375299991312">8(029)-999-13-12<span class="number__underline"></span></a>
                 </div>
                 <div class="social">
                     <a href="#"><img src="assets/svg/yt.svg" alt="youtube" width="33.6"></img></a>
