@@ -52,6 +52,13 @@
     background-image: url("../assets/svg/star.svg");
     display: block;
 }   
+.hidden__text{
+    display: none;
+}
+.review__hide{
+    display: none;
+    text-decoration: underline;
+}
 @media screen and (max-width:1200px){
     div.reviews{
         grid-template-columns: 26.6rem 26.3rem 26.2rem;
