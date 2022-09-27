@@ -96,6 +96,18 @@ a{
 .welcomePic__tablet{
     display: none;
 }
+.header__burger{
+    display: none;
+}
+.burger__arrow{
+    display: none;
+}
+.burger__li{
+    display: none;
+}
+.burger__number{
+    display: none;
+}
 @media screen and (max-width:1200px){
     .benefits__wrapper{
         margin-top: 1rem;
@@ -175,9 +187,93 @@ a{
         font-size: 0.8rem;
         margin: 0.3rem 0;
     }
-
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
+    .header__burger{
+        position: relative;
+        display: block;
+        width: 2.87rem;
+        height: 1.75rem;
+    }
+    .header__burger::before,
+    .header__burger::after{
+        position: absolute;
+        content:'';
+        background-color: var(--main-black);
+        height: 2px;
+        width: 100%;
+        left: 0;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header__burger span{
+        background-color: var(--main-black);
+        height: 2px;
+        width: 100%;
+        top: 13px;
+        position: absolute;
+    }
+    .header__menu{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 50;
+        background-color: white;
+        flex-direction: column;
+        width: 20.5rem;
+        margin-right: -2rem;
+        border-radius: 5%;
+        gap: 0.5rem;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+    .header__li{
+        padding:  1rem 0 1rem  2.5rem;
+        font-weight: 500;
+        font-size: 1.87rem;
+        line-height: 2.15rem;
+    }
+    .header__li:hover{
+        background-color: black;
+        transition: 0.4s;
+    }
+    .header__li:hover a{
+        color: var(--main-white);
+    }
+    .burger__arrow{
+        display: flex;
+        margin: 1.5rem 2rem 4rem 14rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-top: 2px solid var(--main-black);
+        border-right: 2px solid var(--main-black);
+        transform: rotate(45deg);
+        z-index: 50;
+    }
+    .burger__number{
+        display: block;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding-top: 4rem;
+        margin-left: -1rem;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .headerNumber__underline{
+        width: 8rem;
+        content: "";
+        display: flex;
+        margin-top: 0.8rem;
+        height: 1px;
+        background: var(--main-black);
+    }
     .benefits__wrapper{
         max-width: 34rem;
         justify-content: space-around;
@@ -206,7 +302,6 @@ a{
         flex-direction: column;
         padding-bottom: 1rem;
     }
-    .header__menu,
     .welcome__pic,
     .header__number{
         display: none;
@@ -241,6 +336,58 @@ a{
     }
 }
 @media screen and (max-width:560px){
+    .header__burger{
+        width: 2rem;
+        height: 1.3rem;
+        margin-right: 1rem;
+    }
+    .header__burger span{
+        height: 2px;
+        top: 9px;
+    }
+    .logo{
+        z-index: 70;
+    }
+    .header__menu{
+        border-radius: 0;
+        width: 100%;
+        margin-right: 0;
+        gap: 0.5rem;
+        padding-bottom: 3rem;
+    }
+    .header__li{
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.15rem;
+    }
+    .burger__arrow{
+        display: block;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-top: 2px solid var(--main-black);
+        border-right: 2px solid var(--main-black);
+        transform: rotate(45deg);
+        z-index: 50;
+    }
+    .burger__number{
+        display: block;
+        font-weight: 600;
+        font-size: 1.15rem;
+        line-height: 1.8rem;
+        padding-top: 2rem;
+        margin-left: -1rem;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .headerNumber__underline{
+        width: 8rem;
+        content: "";
+        display: flex;
+        margin-top: 0.8rem;
+        height: 1px;
+        background: var(--main-black);
+    }
     .benefits__card{
         display: none;
     }
