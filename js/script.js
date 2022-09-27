@@ -19,11 +19,9 @@ let servicesArrow = document.querySelector('.services__arrow');
 
 formTitleWrapper.addEventListener('click', function(){
     (servicesForm.style.display === 'grid') ? servicesForm.style.display = 'none' : servicesForm.style.display = 'grid';
-});
-
-formTitleWrapper.addEventListener('click', function(){
     (servicesArrow.style.transform === 'rotate(135deg)') ? servicesArrow.style.transform = 'rotate(-45deg)' : servicesArrow.style.transform = 'rotate(135deg)';
 });
+
 
 const reviewFull = document.querySelectorAll('.review__full');
 let dots = document.querySelectorAll('.dots');

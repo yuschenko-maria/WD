@@ -198,6 +198,7 @@ select{
 .formTitle__wrapper{
     display: inline-flex;
     gap: 2rem;
+    cursor: pointer;
 }
 .services__arrow{
     display: flex;
