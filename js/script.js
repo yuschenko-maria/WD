@@ -56,16 +56,16 @@ window.onload = function () {
         hour = hour.toString().length < 2  ? "0" + hour : hour;
 
         document.getElementById("timer").innerHTML =
-           hour + ":" + minute + ":" + sec;
-        sec--;
+           `${hour}:${minute}:${sec}`;
+        sec-=1;
         if (sec == 00) {
-           minute--;
+           minute-=1;
            sec = 59;
             if (minute == 00) {
                 minute = 59;
-                hour--
+                hour-=1
                 if (hour == 0){
-                    sec--
+                    sec-=1
                     hour = 23
                 }
             }
