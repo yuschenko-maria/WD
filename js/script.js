@@ -44,3 +44,34 @@ for (let i = 0; i < reviewHide.length; i++) {
         reviewHide[i].style.display = 'none';
     })
 }
+
+let hour = 5;
+let minute = 37;
+let sec = 25;
+
+window.onload = function () {
+    setInterval(function () { 
+        minute = minute.toString().length < 2 ? "0" + minute : minute;
+        sec = sec.toString().length < 2 ? "0" + sec : sec;
+        hour = hour.toString().length < 2  ? "0" + hour : hour;
+
+        document.getElementById("timer").innerHTML =
+           hour + ":" + minute + ":" + sec;
+        sec--;
+        if (sec == 00) {
+           minute--;
+           sec = 59;
+            if (minute == 00) {
+                minute = 59;
+                hour--
+                if (hour == 0){
+                    sec--
+                    hour = 23
+                }
+            }
+        }
+    }, 1000);
+ };
+
+ 
+ 
