@@ -24,6 +24,7 @@ div.auto__three,
 .auto__item{
     padding: 0.8rem 4rem ;
     border: 1px solid var(--main-white);
+    cursor: pointer;
 }
 .auto__item:hover{
     border: 1px solid var(--main-yellow);
@@ -55,6 +56,9 @@ div.auto__three,
     justify-content: center;
     padding: 0 4rem;
 }
+.autos__card{
+    margin-top: 3rem;
+}
 .autos__list{
     max-width: 40rem;
     margin: 0 auto;
@@ -70,6 +74,67 @@ div.auto__three,
 }
 .auto__button:hover{
     color: var(--main-white);
+}
+.dots__wrapper {
+    display: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+.auto__two,
+.auto__three{
+    padding-top: 3rem;
+}
+.dot.active {
+    background-color: #000000;
+}
+#btn-prev, #btn-next {
+    cursor: pointer;
+}
+.arrow__next{
+    display: flex;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-top: 2px solid var(--main-black);
+    border-right: 2px solid var(--main-black);
+    transform: rotate(45deg);
+    z-index: 50;
+}
+.arrow__prev{
+    display: flex;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-top: 2px solid var(--main-black);
+    border-right: 2px solid var(--main-black);
+    transform: rotate(225deg);
+    z-index: 50;
+}
+.slider__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.auto__item.active{
+    border: 1px solid var(--main-yellow);
+}
+.slide.active {
+    display: flex;
+}
+.tablet__subtitle,
+.tabletButton__wrapper{
+    display: none;
 }
 @media screen and (max-width:1200px){
     .auto__button{
@@ -114,7 +179,7 @@ div.auto__three,
     }
     .autoCard__wrapper{
         gap: 2rem;
-        grid-template-columns: 10rem 28rem;
+        grid-template-columns: 8rem 24rem;
     }
     .autos__title{
         font-size: 1.5rem;
@@ -147,7 +212,7 @@ div.auto__three,
     }
     .autoCard__wrapper{
         gap: 1.2rem;
-        grid-template-columns: 8rem 25rem;
+        grid-template-columns: 6rem 21rem;
     }
     .autoCard__wrapper{
         padding: 0;
@@ -177,11 +242,13 @@ div.auto__three,
     }
 }
 @media screen and (max-width:768px){
-    .auto__tablet{
-        display: block;
+    .auto__terms{
+        display: none;
     }
-    .autoTablet__two,
-    .autoTablet__three{
+    .dots__wrapper{
+        display: flex;
+    }
+    #btn-prev, #btn-next{
         display: none;
     }
     .auto__one,
@@ -190,6 +257,7 @@ div.auto__three,
         display: none;
     }
     .tablet__subtitle{
+        display: block;
         font-size: 1.25rem;
         line-height: 1.5rem;
         text-align: center;
@@ -206,14 +274,6 @@ div.auto__three,
         color: var(--main-white);
         transition: 1s;
     }
-    .autoTablet__one,
-    .autoTablet__two,
-    .autoTablet__three{
-        text-align: center;
-    }
-    .auto__tablet{
-        text-align: center;
-    }
     .auto__item{
         font-size: 1.25rem;
         line-height: 1.5rem;
@@ -222,7 +282,13 @@ div.auto__three,
     }
     .auto__item:hover{
         border: none;
-        border-bottom: 1px solid var(--main-yellow);
+        text-decoration: underline;
+        text-decoration-color: var(--main-yellow);
+    }
+    .auto__item.active{
+        border: none;
+        text-decoration: underline;
+        text-decoration-color: var(--main-yellow);
     }
     .autos__list{
         max-width: 28.5rem;
@@ -230,6 +296,17 @@ div.auto__three,
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
         padding-bottom: 4rem;
+    }
+    .slider__wrapper{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .slide.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .tabletButton__wrapper{
+        text-align: center;
     }
 }
 @media screen and (max-width:560px){
