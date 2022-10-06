@@ -82,7 +82,7 @@ div.auto__three,
 }
 .auto__two,
 .auto__three{
-    padding-top: 3rem;
+    margin-top: 3rem;
 }
 .dot.active {
     background-color: #000000;
@@ -156,7 +156,10 @@ span.dot {
     }
     .autoCard__wrapper{
         gap: 2rem;
-        grid-template-columns: 13rem 30rem;
+        grid-template-columns: 13rem 15rem;
+    }
+    .auto__pic{
+        max-width: 32rem;
     }
 }
 @media screen and (max-width:1024px){
@@ -169,6 +172,9 @@ span.dot {
         font-size: 0.8rem;
         line-height: 1.3rem;
         padding-bottom: 1rem;
+    }
+    .auto__pic{
+        max-width: 28rem;
     }
     .terms__list{
         font-size: 0.7rem;
