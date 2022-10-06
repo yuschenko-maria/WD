@@ -111,7 +111,6 @@ div.auto__three,
 .slider__wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 span.dot {
     width: 15px;
@@ -268,6 +267,9 @@ span.dot {
         line-height: 1.5rem;
         text-align: center;
         padding-bottom: 3rem;
+    }
+    .tabletButton__wrapper{
+        display: block;
     }
     .autoTablet__button{
         padding: 1.25rem 7.5rem;
