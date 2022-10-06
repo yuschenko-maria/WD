@@ -58,13 +58,13 @@ window.onload = function () {
         document.getElementById("timer").innerHTML =
            `${hour}:${minute}:${sec}`;
         sec-=1;
-        if (sec == 00) {
+        if (sec === 00) {
            minute-=1;
            sec = 59;
-            if (minute == 00) {
+            if (minute === 00) {
                 minute = 59;
                 hour-=1
-                if (hour == 0){
+                if (hour === 0){
                     sec-=1
                     hour = 23
                 }
@@ -107,7 +107,7 @@ const prepareActiveSlide = () =>{
   activeItem(index);
 }
 const nextSlide = () => {
-  if(index == slides.length - 1) {
+  if(index === slides.length - 1) {
     index = 0;
     prepareActiveSlide(index);
 }
@@ -117,7 +117,7 @@ const nextSlide = () => {
 }   
 }
 const prevSlide = () => {
-  if(index == 0 ) {
+  if(index === 0 ) {
     index = slides.length - 1;
     prepareActiveSlide(index);
   }

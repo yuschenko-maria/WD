@@ -339,4 +339,7 @@ span.dot {
         max-width: 16.5rem;
         gap: 1rem;
     }
+    .auto__pic{
+        max-width: 20rem;
+    }
 }
