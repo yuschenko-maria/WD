@@ -58,13 +58,13 @@ window.onload = function () {
         document.getElementById("timer").innerHTML =
            `${hour}:${minute}:${sec}`;
         sec-=1;
-        if (sec == 00) {
+        if (sec === 00) {
            minute-=1;
            sec = 59;
-            if (minute == 00) {
+            if (minute === 00) {
                 minute = 59;
                 hour-=1
-                if (hour == 0){
+                if (hour === 0){
                     sec-=1
                     hour = 23
                 }
@@ -72,6 +72,74 @@ window.onload = function () {
         }
     }, 1000);
  };
+
+const prev = document.getElementById('btn-prev'),
+next = document.getElementById('btn-next'),
+slides = document.querySelectorAll('.slide');
+dots = document.querySelectorAll('.dot');
+autoItems = document.querySelectorAll('.auto__item');
+
+let index = 0;
+
+
+const activeSlide = n => {
+  for (slide of slides) {
+    slide.classList.remove('active');
+}
+slides[n].classList.add('active');
+}
+
+const  activeDot = n => {
+    for (dot of dots) {
+        dot.classList.remove('active');
+    }
+    dots[n].classList.add('active');
+}
+const activeItem = n => {
+  for (autoItem of autoItems) {
+    autoItem.classList.remove('active');
+  }
+  autoItems[n].classList.add('active');
+}
+const prepareActiveSlide = () =>{
+  activeSlide(index);
+  activeDot(index);
+  activeItem(index);
+}
+const nextSlide = () => {
+  if(index === slides.length - 1) {
+    index = 0;
+    prepareActiveSlide(index);
+}
+  else{
+    index++;
+    prepareActiveSlide(index);
+}   
+}
+const prevSlide = () => {
+  if(index === 0 ) {
+    index = slides.length - 1;
+    prepareActiveSlide(index);
+  }
+  else{
+    index--;
+    prepareActiveSlide(index);
+  }
+}
+dots.forEach((item, indexDot) => {
+  item.addEventListener('click', () =>{
+    index = indexDot;
+    prepareActiveSlide(index);
+  })
+autoItems.forEach((item, indexAuto) => {
+    item.addEventListener('click', () =>{
+        index = indexAuto;
+        prepareActiveSlide(index);
+    });
+  })
+});
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
 
  
  
